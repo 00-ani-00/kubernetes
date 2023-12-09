@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-tomcat
+  namespace: my-space
+spec:
+  containers:
+   - name: my-tomcat
+     image: ashikantbhande/tomcat:student
+     ports:
+      - containerPort: 80
